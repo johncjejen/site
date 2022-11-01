@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Jejen</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-image:url("img/back-body.jpeg");
+            background-color: #ececec;
+            background-repeat: no-repeat;
+            background-size:2200px;
+            background-position: left;
+        }
+
+        main {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .card-container {
+            width: 750px;
+            height: 1100px;
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 5px 10px 50px white;
+        }
+
+        .img-background {
+            display: inline-block;
+            width: 100%;
+            height: 260px;
+            background: url("img/back-profile.jpeg") center/cover no-repeat;
+            z-index: 10;
+        }
+
+        .card-img-profile {
+            display: inline-block;
+            position: absolute;
+            top: 135px;
+            left:  0px;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 5px solid white;
+            z-index: 20;
+            background: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat;
+        }
+
+        .card_profile {
+            display: flex;
+            width: 100%;
+            margin: 45px auto 20px;
+            flex-direction: column;
+        }
+
+        .card_profile h1 {
+            width: 65%;
+            margin: 10px auto 7px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(211, 211, 211, 0.65);
+            color: #025395;
+        }
+
+        .card_profile p {
+            padding: 0 30px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            border-right: 0.15em solid #18bdec;
+            animation: typing 4s steps(18) 1s 1 normal both, blink 1s steps(1) infinite;
+        }
+
+        .social {
+            display: grid;
+            grid-template-columns: 40px 40px;
+            grid-template-rows: 40px 40px;
+            justify-content: space-evenly;
+            
+        }
+
+        .social img{
+            width: 70px;
+            height: 70px;
+            align-items: center ;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .Follow {
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+            grid-template-rows: 120px 60px;
+            justify-content: space-evenly;
+            background-color: rgb(214, 214, 214);
+            color: black;
+            border-top: 0px solid rgba(248, 248, 248, 0.876);
+        }
+
+        .languages-exp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .languages-exp img {
+            width: 80px;
+            height: 80px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .button {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            padding-top: 13px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.9rem;
+            background-color: #025395;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="profile">
+            <section class="card-container">
+                <div class="img-background"></div>
+                <div class="card-img-profile"></div>
+                <div class="card_profile">
+                    <h1>John Jejen</h1>
+                    <p>Software Developer from Colombia🇨🇴</p>
+                </div>
+                <div class="social">
+                    <a href="https://linkedin.com/in/ing-john-carlos-jejen-corredor/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+                    <a href="https://github.com/johncjejen" target="_blank"><img src="img/github.png" alt="Github"></a>
+                </div>
+                <div></div>
+                <div class="Follow">
+                    <p class="languages-exp"><img src="img/ruby.png" alt="Ruby on Rails"></p>
+                    <p class="languages-exp"><img src="img/node.png" alt="Node js"></p>
+                    <p class="languages-exp"><img src="img/nest.svg" alt="Nest js"></p>
+                </div>
+                <div class="Follow">
+                    <p class="languages-exp"><img src="img/mysql.png" alt="Mysql"></p>
+                    <p class="languages-exp"><img src="img/mongodb.png" alt="MongoDb"></p>
+                    <p class="languages-exp"><img src="img/postgres.png" alt="Postgres"></p>
+                </div>
+                <div class="Follow">
+                    <p class="languages-exp"><img src="img/html.png" alt="Html"></p>
+                    <p class="languages-exp"><img src="img/css.png" alt="Css"></p>
+                    <p class="languages-exp"><img src="img/react.png" alt="React"></p>
+                </div>
+                <a class="button" href="contact.html">Contact Me</a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
